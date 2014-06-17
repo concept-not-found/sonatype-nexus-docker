@@ -1,6 +1,6 @@
 [Docker](http://www.docker.com/) container for [Sonatype Nexus](http://www.sonatype.org/nexus)
 
-Image: conceptnotfound/sonatype-nexus-docker
+Docker: `docker pull conceptnotfound/sonatype-nexus`
 
 Port: 8081
 
