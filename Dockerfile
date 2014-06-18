@@ -13,6 +13,6 @@ VOLUME /nexus
 
 EXPOSE 8081
 
-ENV NEXUS_CONTEXT_PATH /nexus
+ENV CONTEXT_PATH /nexus
 
-CMD RUN_AS_USER=root /usr/local/nexus/bin/nexus console
+CMD RUN_AS_USER=root NEXUS_CONTEXT_PATH=$CONTEXT_PATH /usr/local/nexus/bin/nexus console

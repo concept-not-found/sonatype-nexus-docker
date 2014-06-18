@@ -8,4 +8,4 @@ Volume: /nexus
 
 Environment variables:
 
-* NEXUS_CONTEXT_PATH (default /nexus)
+* CONTEXT_PATH (default /nexus)
