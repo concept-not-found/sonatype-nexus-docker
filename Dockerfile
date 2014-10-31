@@ -1,13 +1,14 @@
-FROM ubuntu:12.10
+FROM ubuntu:trusty
 
-RUN apt-get update
-RUN apt-get install -y default-jre
-RUN apt-get install -y wget
+RUN apt-get update &&\
+    apt-get install -y default-jre && \
+    apt-get install -y wget
 
-RUN cd /usr/local && wget -qO- http://download.sonatype.com/nexus/oss/nexus-2.8.1-01-bundle.tar.gz | tar xz
-RUN cd /usr/local && ln -s nexus-2.8.1-01 nexus
-RUN rm -rf /usr/local/sonatype-work/nexus
-RUN ln -s /nexus /usr/local/sonatype-work/nexus
+RUN cd /usr/local && \
+    wget -qO- http://download.sonatype.com/nexus/oss/nexus-2.8.1-bundle.tar.gz | tar xz && \
+    ln -s nexus-2.8.1-01 nexus && \
+    rm -rf /usr/local/sonatype-work/nexus && \
+    ln -s /nexus /usr/local/sonatype-work/nexus
 
 VOLUME /nexus
 
