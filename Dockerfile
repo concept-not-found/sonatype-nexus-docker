@@ -5,8 +5,8 @@ RUN apt-get update &&\
     apt-get install -y wget
 
 RUN cd /usr/local && \
-    wget -qO- http://download.sonatype.com/nexus/oss/nexus-2.8.1-bundle.tar.gz | tar xz && \
-    ln -s nexus-2.8.1-01 nexus && \
+    wget -qO- http://download.sonatype.com/nexus/oss/nexus-2.10.0-02-bundle.tar.gz | tar xz && \
+    ln -s nexus-2.10.0-02 nexus && \
     rm -rf /usr/local/sonatype-work/nexus && \
     ln -s /nexus /usr/local/sonatype-work/nexus
 
