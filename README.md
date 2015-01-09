@@ -15,5 +15,5 @@ Usage
 
 To run nexus:
 ```bash
-docker run -d -p 8081:8081 --name nexus  conceptnotfound/sonatype-nexus
+docker run -d -p 8081:8081 --name nexus conceptnotfound/sonatype-nexus
 ```
