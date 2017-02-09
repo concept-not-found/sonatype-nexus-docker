@@ -1,9 +1,9 @@
 # DEPRECATED - USE OFFICIAL REPOS
 
-Nexus 3: https://github.com/sonatype/docker-nexus3
+Nexus 3: https://hub.docker.com/r/sonatype/nexus3/
 
 
-Nexus 2: https://github.com/sonatype/docker-nexus
+Nexus 2: https://hub.docker.com/r/sonatype/nexus/
 
 ---
 
